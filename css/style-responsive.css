@@ -26,6 +26,10 @@
     width:60%;
   }
 
+  .content .project-text h1, .content .project-text h2, .content .project-text p{
+    width:90%;
+  }
+
   #full{
     width:1000px;
   }
@@ -55,7 +59,7 @@
   }
 
   .grid-hover, li.grid-item, li.grid-item img{
-    width:312px;
+    width:500px;
   }
 
 
@@ -87,6 +91,10 @@
 
   .content .text-work h1, .content .text-work p{
     width:60%;
+  }
+
+  .content .project-text h1, .content .project-text h2, .content .project-text p{
+    width:90%;
   }
 
   #full{
@@ -149,6 +157,10 @@
 
   .content .text-work h1, .content .text-work p{
     width:100%;
+  }
+
+  .content .project-text h1, .content .project-text h2, .content .project-text p{
+    width:95%;
   }
 
   #full{
@@ -305,6 +317,11 @@
   .grid-hover, li.grid-item, li.grid-item img{
     width:400px;
   }
+	
+	.left-col, .mid-col, .right-col{
+  	width:100%;
+	margin-bottom: 0px;
+}
 
 }
 
@@ -412,5 +429,10 @@
   .grid-hover, li.grid-item, li.grid-item img{
     width:280px;
   }
+	
+	.left-col, .mid-col, .right-col{
+  	width:100%;
+	margin-bottom: 0px;
+}
 
 }

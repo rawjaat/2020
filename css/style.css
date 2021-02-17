@@ -371,10 +371,22 @@ CONTENT
   float:left;
 }
 
+.mid-column{
+  width:50%;
+  position:relative;
+  float:left;
+}
+
 .two-column{
   width:60%;
   position:relative;
   float:left;
+}
+
+.full-column{
+  width:100%;
+  position:relative;
+  float:none;
 }
 
 .one-column p{
@@ -458,6 +470,99 @@ CONTENT
     width: 40%;
 }
 
+.content .project-text{
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  text-align:center;
+}
+
+.content .project-text img{
+	display: block;
+  	width: 80%;
+    margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content .project-text h1{
+  font-size:43px;
+  width: 80%;
+  text-transform:uppercase;
+  color:#000000;
+  font-weight:900;
+  line-height:70px;
+  margin: auto;
+}
+
+.content .project-text h2{
+	width: 80%;
+  	font-size:18px;
+	text-transform:uppercase;
+	color:#000000;
+ 	font-weight:700;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.content .project-text p{
+	width: 90%;
+    font-size: 14px;
+    color: #313131;
+  	margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.content .full-img{
+  width: 100%;
+  margin-top: 10px;
+  margin: 25px auto 0;
+}
+
+.greyback{
+  background:#ececec;
+}
+
+.img-box{
+  position: relative;
+  text-align: center;
+}
+
+.right-text {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.left-text {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.sit-right{
+    display: block;
+    margin: 0 auto;
+    float: right;
+}
+
+.sit-left{
+    display: block;
+    margin: 0 auto;
+    float: left;
+}
+
+.sit-mid{
+    display: block;
+    margin: 0 auto;
+}
+
         .typed-cursor{
             opacity: 1;
             font-weight: 900;
@@ -527,7 +632,7 @@ PORTFOLIO GRID
 
 .prev-next{
   width:100%;
-  max-width:1170px;
+  max-width:1220px;
   margin:0 auto;
   padding-top:100px;
 }
@@ -563,11 +668,32 @@ PORTFOLIO GRID
   text-align:right;
 }
 
+.left-col{
+  width:33%;
+  position:relative;
+  float:left;
+  text-align:center;
+}
+
+.mid-col{
+  width:33%;
+  position:relative;
+  float:left;
+  text-align:center;
+}
+
+.right-col{
+  width:33%;
+  position:relative;
+  float:left;
+  text-align:center;
+}
+
 
 #ajax-content{width:100%;}
 
 .portfolio-grid{
-  width:1170px;
+  width:1220px;
   position:relative;
   margin: 30px auto;
   overflow:hidden;
@@ -580,7 +706,7 @@ PORTFOLIO GRID
 }
 
 li.grid-item{
-  width:360px;
+  width:600px;
   position:relative;
   float:left;
   /*padding: 15px;*/
@@ -591,7 +717,7 @@ li.grid-item{
 
 .grid-hover{
   position: absolute;
-  width:360px;
+  width:600px;
   height: 100%;
   top:0;
   background: rgba(0, 0, 0, 0.5);
@@ -635,7 +761,7 @@ li.grid-item{
 
 
 li.grid-item img{
-  width:360px;
+  width:600px;
 }
 
 /*

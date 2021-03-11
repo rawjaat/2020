@@ -1,3 +1,69 @@
+@media all and (max-width: 1600px) and (min-width: 1330px) {
+	
+	header.boxed .header-margin{
+    width:1200px;
+  }
+
+  .content .text-intro{
+    width:1200px;
+  }
+	
+	
+
+  .content .text-work{
+    width:1200px;
+  }
+
+  .footer-margin{
+    width:1200px;
+  }
+
+  .content .text-intro h1, .content .text-intro p{
+    width:60%;
+  }
+
+  .content .text-work h1, .content .text-work p{
+    width:60%;
+  }
+
+  .content .project-text h1, .content .project-text h2, .content .project-text p{
+    width:90%;
+  }
+
+  #full{
+    width:1200px;
+  }
+
+  .prev-next{
+    max-width:1200px;
+  }
+
+
+  /*
+  **************************
+  Portfolio Grid
+  **************************
+  */
+
+  #portfolio-sidebar{
+
+    width: 910px !important;
+    padding-right: 160px;
+	padding-left: 160px;
+  }
+
+  .portfolio-grid{
+
+    width:1230px;
+
+  }
+
+  .grid-hover, li.grid-item, li.grid-item img{
+    width:500px;
+  }
+	
+}
+
 @media all and (max-width: 1330px) and (min-width: 1180px) {
 
   header.boxed .header-margin{
@@ -297,6 +363,10 @@
   }  
   
   #footer-left{text-align:center;}
+	
+	#re-size {
+	width:400px;
+}
 
   /*
   **************************
@@ -409,6 +479,12 @@
     font-size:33px; 
     line-height:50px;
   }
+	
+	#re-size {
+	width:250px;}
+	
+	#re-size2 {
+	width:250px;}
 
   /*
   **************************

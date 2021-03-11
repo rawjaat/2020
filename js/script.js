@@ -168,7 +168,7 @@ $(document).ready(function(){
 	setTimeout( function(){
 		if($("#site-type").length) {
         $(".typewrite span").typed({
-            strings: ["an engineer? ", "a designer? ", "both. "],
+            strings: ["an engineer ", "a designer ", "an innovator "],
             typeSpeed: 80,
             backDelay: 800,
             loop: true,

@@ -25,6 +25,10 @@
   
 </head>
 
+	<style>
+	.mySlides, .mySlides1 {display: none;}
+	</style>
+	
 <body>
 
 <!--Preloader-->
@@ -153,7 +157,7 @@
 			<div class="project-text">
 			  <h1>+ technology</h1>
 				
-	            <p>Technology is 'smart' when it takes useful data, correctly analyzes it, and outputs real solutions. Looking at the mind and body realtionship, where the heart rate is always the key signal to stress, it seemed obvious that a well placed heart monitor would be the key to knowing when help is needed. At moments of rising stress, Cognitive Behavioral Therapy techniques are most effective because they help you recognize when your mind is affecting your body, and give you the tools to process these emotions. Heart rate data acquired while using these technique could provide futher insight into how well you improve overtime.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+	            <p>Technology is 'smart' when it takes useful data, correctly analyzes it, and outputs real solutions. Looking at the mind and body realtionship, where the heart rate is always the key signal to stress, it seemed obvious that a well placed heart monitor would be the key to knowing when help is needed. At moments of rising stress, Cognitive Behavioral Therapy techniques are most effective because they help you recognize when your mind is affecting your body, and give you the tools to process these emotions. Heart rate data acquired while using these technique could provide futher insight into how well you improve overtime.</p>
 				<img src="img/portfolio/reset/cycle2.png" id="re-size">
 				
 			</div>
@@ -162,7 +166,8 @@
 			<div class="project-text">
 				<h1>THE Mission</h1>
 				
-	            <p>Using the combination of technology and psychology, a more personal and tailored experience to mental health therapy can be provided.&nbsp;Targeting the physical responses makes this solution applicable to everyone, because no matter the trigger, we all have a heart.  A mobile and wearable solution can also be much more accessible than current methods of in person therapy, and could even be used to enhance the care given from a professional. A wearable would obviously catch someone's eye, so rather than seeming like a health device, this solution should be able to hide in plain sight.&nbsp; &nbsp;</p>
+				<p>Using the combination of technology and psychology, a more personal and tailored experience to mental health therapy can be provided.</p>
+	            <!--<p>Using the combination of technology and psychology, a more personal and tailored experience to mental health therapy can be provided. Targeting the physical responses makes this solution applicable to everyone, because no matter the trigger, we all have a heart.  A mobile and wearable solution can also be much more accessible than current methods of in person therapy, and could even be used to enhance the care given from a professional. A wearable would obviously catch someone's eye, so rather than seeming like a health device, this solution should be able to hide in plain sight.</p>-->
 				<img src="img/portfolio/reset/dgoals.png" id="re-size">
 				
 			</div>
@@ -189,7 +194,7 @@
 			<div class="project-text">
 				<h1>Validation Concepts</h1>
 				
-	            <p>Designing with users in mind, I developed concepts to explore different four differen&nbsp; interactions (tap, slide, pull, twist) and forms to determine with one would be most suitable in their daily lives. I used these concepts to conduct a design review with people who have been disagnosed with General Anxiety Disorder.&nbsp; &nbsp;</p>
+	            <p>Designing with users in mind, I developed concepts to explore four different interactions (tap, slide, pull, twist) and forms to determine with one would be most suitable in their daily lives. I used these concepts to conduct a design review with people who have been disagnosed with General Anxiety Disorder.</p>
 			</div>
 			<div class="mySlides1 fade">
 				<img src="img/portfolio/reset/valcon1.jpg" width="100%">
@@ -218,24 +223,24 @@
 			<div class="project-text">
 				<h1>Concept Development</h1>
 				
-	            <p>Designing with users in mind, I developed concepts to explore different interactions and forms to determine with one would be most suitable in their daily lives. I used these concepts to conduct a design review with people who have been disagnosed with General Anxiety Disorder.&nbsp; &nbsp;</p>
+	            <p>Taking the insights from my concept testing, I continued iteration and testing of mechanisms to create a new form with the desired interactions.</p>
 			</div>
-			<div class="mySlides fade2">
-			  <img src="img/portfolio/reset/proto.jpg" width="100%">
-			</div>
-			<div class="mySlides fade2">
+			<div class="mySlides fade">
 			  <img src="img/portfolio/reset/slide3.jpg" width="100%">
 			</div>
-			<div class="mySlides fade2">
+			<div class="mySlides fade">
 			  <img src="img/portfolio/reset/slide4.jpg" width="100%">
 			</div>
-			<div class="mySlides fade2">
+			<div class="mySlides fade">
 			  <img src="img/portfolio/reset/slide1.jpg" width="100%">
 			</div>
-			<div class="mySlides fade2">
+			<div class="mySlides fade">
 			  <img src="img/portfolio/reset/slide5.jpg" width="100%">
 			</div>
 			<br>
+			
+			  <img src="img/portfolio/reset/proto.jpg" width="100%">
+			
 		  <div style="text-align:center">
   				<span class="dot"></span> 
   				<span class="dot"></span> 
@@ -351,6 +356,55 @@
       $( ".opacity-nav" ).fadeToggle( "slow", "linear" );
     // Animation complete.
     });
+		
+/*-------------------------------------------
+Functions Show / Hide Preloader
+---------------------------------------------*/
+
+var slideIndex1 = 0;
+showSlides1();
+
+function showSlides1() {
+  var j;
+  var slides1 = document.getElementsByClassName("mySlides1");
+  var dots1 = document.getElementsByClassName("dot1");
+  for (j = 0; j < slides1.length; j++) {
+    slides1[j].style.display = "none";  
+  }
+  slideIndex1++;
+  if (slideIndex1 > slides1.length) {slideIndex1 = 1}    
+  for (j = 0; j < dots1.length; j++) {
+    dots1[j].className = dots1[j].className.replace(" active", "");
+  }
+  slides1[slideIndex1-1].style.display = "block";  
+  dots1[slideIndex1-1].className += " active";
+  setTimeout(showSlides1, 7000); // Change image every X000 seconds
+}
+	
+	
+	
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4500); // Change image every X000 seconds
+}
+
+		
+		
   </script>
 
 

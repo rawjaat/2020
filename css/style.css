@@ -756,48 +756,57 @@ CONTENT
 }
 
 
-.mySlides, .mySlides1 {display: none;}
+
 
 .active {
   background-color: #717171;
 }
 
+.animate-fading{animation:fading 6s infinite}
+@keyframes fading{
+	0%{opacity:0}
+	30%{opacity:1}
+	70%{opacity:1}
+	100%{opacity:0}
+}
+
 /* Fading In and Out animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 6.5s;
-  -webkit-animation-delay: -0.25s;
+  -webkit-animation-duration: 7s;
   animation-name: fade;
-  animation-duration: 6.5s;
-  animation-delay: -0.25s;
+  animation-duration: 7s;
 }
 
 @-webkit-keyframes fade {
-  0% {opacity: 0.1}
-  20% {opacity: 1}
-  80% {opacity: 1}
-  100% {opacity:0.1}
+  0% {opacity: 0}
+  14.3% {opacity: 1}
+  85.7% {opacity: 1}
+  100% {opacity:0}
 }
 
 @-moz-keyframes fade{
-  0% {opacity: 0.1}
-  20% {opacity: 1}
-  80% {opacity: 1}
-  100% {opacity:0.1}
+  0% {opacity: 0}
+  14.3% {opacity: 1}
+  85.7% {opacity: 1}
+  100% {opacity:0}
+}
 }
 
 @keyframes fade {
-  0% {opacity: 0.1}
-  20% {opacity: 1}
-  80% {opacity: 1}
-  100% {opacity:0.1}
+  0% {opacity: 0}
+  14.3% {opacity: 1}
+  85.7% {opacity: 1}
+  100% {opacity:0}
+}
 }
 
-@-o-keyframes fade {
-  0% {opacity: 0.1}
-  20% {opacity: 1}
-  80% {opacity: 1}
-  100% {opacity:0.1}
+@-o-keyframes fade{
+  0% {opacity: 0}
+  14.3% {opacity: 1}
+  85.7% {opacity: 1}
+  100% {opacity:0}
+}}
 }
 
 /* Fading In and Out animation */

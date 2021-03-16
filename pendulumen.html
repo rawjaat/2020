@@ -1,7 +1,6 @@
 <!doctype html>
 
-<html lang="en">
-<head>
+<html lang="en"><head>
 
   <meta charset="utf-8">
   <title>DVAN | DESIGN</title>
@@ -16,8 +15,9 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style-responsive.css">
-  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	
+
   
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -25,6 +25,10 @@
   
 </head>
 
+	<style>
+	.mySlides, .mySlides1 {display: none;}
+	</style>
+	
 <body>
 
 <!--Preloader-->
@@ -39,7 +43,7 @@
 <div class="opacity-nav">
 
         <div class="menu-index2" id="buttons" style="z-index:999999">
-        <i class="fa  fa-close"></i>
+        <i class="fa fa-close"></i>
         </div>
 
     <ul class="menu-fullscreen">
@@ -76,30 +80,65 @@
           
                     
 	          <div class="one-column">
-	            <p>Industrial Design, IoT</p>
+				  <p>Industrial Design, IoT
+	            </p>
 	          </div>
 
-
-		          <div class="two-column">
-		            <p>This project was the result of trend research to bring new purpose to old and traditional products. I chose the pendulum clock because it has lost it's value due to advancing technology. Combining it with the smart home technology of Alexa or Google Home is the perfect way to move this traditional product into the modern world. View my portfolio for more details.</p>
-		          </div>   
+   
                  				  
                 <div class="clear"></div>   				  
                  				        
-				        <br/><br/><br/><br/><br/><br/><br/><br/>
-				        
-				        <img src="img/portfolio/lumen/1.jpg" width="100%"><br/><br/><br/><br/>
-				        <img src="img/portfolio/lumen/2.jpg" width="100%"><br/><br/><br/><br/>
-				        <img src="img/portfolio/lumen/3.jpg" width="100%"><br/><br/><br/><br/>
-				        <img src="img/portfolio/lumen/4.jpg" width="100%"><br/><br/><br/><br/>
-				        <img src="img/portfolio/lumen/5.png" width="100%"><br/><br/><br/><br/>
-				        <img src="img/portfolio/lumen/6.jpg" width="100%">
-        
-        
+				        <br/><br/><br/><br/>
+			
+				<img src="img/portfolio/lumen/hero.jpg" width="100%">
+			
+			<div><br><br><br><br><br></div>
+			<div class="project-statement">
+				
+				<h2>Pendulumen is a futuristic revision of the tradition pendulum clock.</h2>
+				
+			</div>
+				<div><br><br><br><br><br></div>
+				<img src="img/portfolio/lumen/hero1.jpg" width="100%">
+				<img src="img/portfolio/lumen/1.jpg" width="100%">
+				<img src="img/portfolio/lumen/2.jpg" width="100%">
+				<img src="img/portfolio/lumen/3.jpg" width="100%">
+				<img src="img/portfolio/lumen/4.jpg" width="100%">
+				<img src="img/portfolio/lumen/5.jpg" width="100%">
+				<img src="img/portfolio/lumen/6.jpg" width="100%">
+				<img src="img/portfolio/lumen/7.jpg" width="100%">
+				<img src="img/portfolio/lumen/8.jpg" width="100%">
+				<img src="img/portfolio/lumen/9.jpg" width="100%">
+				<img src="img/portfolio/lumen/10.jpg" width="100%">
+				<img src="img/portfolio/lumen/11.jpg" width="100%">
+				<img src="img/portfolio/lumen/12.jpg" width="100%">
+				<img src="img/portfolio/lumen/13.jpg" width="100%">
+				<img src="img/portfolio/lumen/14.jpg" width="100%">
+				<img src="img/portfolio/lumen/15.jpg" width="100%">
+			<br>
+			<video width="100%" muted autoplay loop>
+ 				<source src="img/portfolio/lumen/swing.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+				
+			
+			<div><br><br><br><br><br><br><br></div>
+		  <div class="project-text">
+				<h1>THANK YOU</h1>
+				
+				
+			</div>
+			
+			
+			
+	  </div>
+	  
+        <div class="text-intro">
+			
 					        <div class="prev-next">
 					        
 					          <div class="prev-button"><a class="ajax-link" href="washi.html">Previous</a></div>
-							<div class="home-button"><a class="ajax-link" href="index.html">All Projects</a></div>
+							<div class="home-button"><a class="ajax-link" href="contact.html">All Projects</a></div>
 					          <div class="next-button"><a class="ajax-link" href="shade.html">Next</a></div>
 					
 					        </div>
@@ -154,6 +193,55 @@
       $( ".opacity-nav" ).fadeToggle( "slow", "linear" );
     // Animation complete.
     });
+		
+/*-------------------------------------------
+Functions Show / Hide Preloader
+---------------------------------------------*/
+
+var slideIndex1 = 0;
+showSlides1();
+
+function showSlides1() {
+  var j;
+  var slides1 = document.getElementsByClassName("mySlides1");
+  var dots1 = document.getElementsByClassName("dot1");
+  for (j = 0; j < slides1.length; j++) {
+    slides1[j].style.display = "none";  
+  }
+  slideIndex1++;
+  if (slideIndex1 > slides1.length) {slideIndex1 = 1}    
+  for (j = 0; j < dots1.length; j++) {
+    dots1[j].className = dots1[j].className.replace(" active", "");
+  }
+  slides1[slideIndex1-1].style.display = "block";  
+  dots1[slideIndex1-1].className += " active";
+  setTimeout(showSlides1, 7000); // Change image every X000 seconds
+}
+	
+	
+	
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4500); // Change image every X000 seconds
+}
+
+		
+		
   </script>
 
 

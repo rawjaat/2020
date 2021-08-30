@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/style-responsive.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	
-
+	<script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
   
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -91,7 +91,26 @@
 				        <br/><br/><br/><br/>
 			
 				
-				<div><br><br><br><br><br></div>
+				<div><br><br>
+					
+					<!-- <model-viewer> HTML element -->
+	<model-viewer src="https://www.dvanhoward.com/img/files/ss3.glb" ios-src="https://drive.google.com/uc?export=download&id=1Z124La2gWvvEz2CihXLSEWEO0QScRUfS" poster="poster.webp" camera-controls>
+
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+					
+					<br><br><br></div>
 			
 			
 			

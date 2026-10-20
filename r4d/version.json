@@ -1,6 +1,6 @@
 {
-  "version_code": 1,
-  "version_name": "0.53.0",
+  "version_code": 2,
+  "version_name": "0.54.0",
   "apk_url": "https://dvanhoward.com/r4d/app-release.apk",
-  "release_notes": "• Initial public release\n• High-stakes D20 roll mechanics\n• Bedtime Hours & Dev Mode"
+  "release_notes": "• Added new features\n• Fixed bugs"
 }

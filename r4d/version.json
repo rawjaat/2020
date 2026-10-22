@@ -1,6 +1,6 @@
 {
-  "version_code": 13,
-  "version_name": "0.56.9",
+  "version_code": 14,
+  "version_name": "0.56.10",
   "apk_url": "https://dvanhoward.com/r4d/app-release.apk",
-  "release_notes": "• Added new features\n• Fixed bottom padding\n• Added auto update every 69 hours\n• New updates will display release notes but I guess you won't see this one"
+  "release_notes": "• Under the hood fixes\n• Fixed some bugs hopefully\n• Secret dev mode removed"
 }

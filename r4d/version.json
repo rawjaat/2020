@@ -1,6 +1,6 @@
 {
-  "version_code": 15,
-  "version_name": "0.56.11",
+  "version_code": 16,
+  "version_name": "0.56.12",
   "apk_url": "https://dvanhoward.com/r4d/app-release.apk",
-  "release_notes": "• Under the hood fixes\n• Fixed session durations not being accurate\n• Don't forget to send feedback with the Report Issues button!"
+  "release_notes": "• Under the hood fixes\n• Fixed session durations in tiktok hopefully\n• NEW HEAT MECHANIC, consecutive sessions raise DC\n• Wisdom Mod no longer active during bedtime and over-time"
 }

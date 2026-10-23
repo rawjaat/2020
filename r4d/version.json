@@ -1,6 +1,6 @@
 {
-  "version_code": 16,
-  "version_name": "0.56.12",
-  "apk_url": "https://github.com/rawjaat/2020/releases/download/0.56.12/app-release.apk",
+  "version_code": 17,
+  "version_name": "0.56.13",
+  "apk_url": "https://github.com/rawjaat/2020/releases/download/0.56.13/app-release.apk",
   "release_notes": "• Under the hood fixes\n• Fixed session durations in tiktok hopefully\n• NEW HEAT MECHANIC, consecutive sessions raise DC\n• Wisdom Mod no longer active during bedtime and over-time\n• DL comes from directly github now"
 }
